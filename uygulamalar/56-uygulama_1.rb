@@ -1,19 +1,20 @@
-#Toplama
-def topla sayi_1, sayi_2
-	sayi_1 + sayi_2
+def topla(sayi1, sayi2)
+  sayi1.to_f + sayi2
 end
 
-#Çıkarma
-def cikar sayi_1, sayi_2
-	sayi_1 - sayi_2
+def cikar(sayi1, sayi2)
+  sayi1.to_f - sayi2
 end
 
-#Çarpma
-def carpma sayi_1, sayi_2
-	sayi_1 * sayi_2
+def carpma(sayi1, sayi2)
+  sayi1.to_f * sayi2
 end
 
-#Bölme
-def bolme sayi_1, sayi_2
-	sayi_1 / sayi_2
+def bolme(sayi1, sayi2)
+  sayi1.to_f / sayi2
 end
+
+topla(3,5)    # => 8.0
+cikar(3,5)    # => -2.0
+carpma(3,5)   # => 15.0
+bolme(3,5)    # => 0.6

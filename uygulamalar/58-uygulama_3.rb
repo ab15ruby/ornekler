@@ -1,8 +1,11 @@
-require "unicode_utils"
+require 'turkish_support'
+using TurkishSupport
 
-#kac_adet methodu
-def kac_adet samanlik, igne
-	samanlik = UnicodeUtils.upcase(samanlik, :tr)
-	igne = UnicodeUtils.upcase(igne, :tr)
-	samanlik.split(igne).length - 1
+def kac_adet(samanlik, igne)
+  samanlik.upcase!
+  igne.upcase!
+  samanlik.split(igne).length - 1
 end
+
+kac_adet("bu cümlede iki tane bu var", "bu")   # => 2
+kac_adet("Bu cümlede iki tane bu var", "BU")   # => 2
