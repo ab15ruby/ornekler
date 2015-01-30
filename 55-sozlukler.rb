@@ -32,9 +32,11 @@ ruby101 = {
 
 puts "#{ruby101[:tarih]} tarihinde #{ruby101[:etkinlik]} etkinliğinde,
 #{ruby101[:egitmen][0]} ve #{ruby101[:egitmen][1]} ile birlikte Ruby öğrenen #{ruby101[:katilimcilar].size} kişiydik."
+# >> 31 Ocak - 03 Şubat 2015 tarihinde Akademik Bilişim etkinliğinde,
+# >> Sıtkı Bağdat ve Umurcan Görür ile birlikte Ruby öğrenen 4 kişiydik.
 
 ruby101.keys      # => [:egitmen, :katilimcilar, :etkinlik, :tarih]
-ruby101.values
+ruby101.values    # => [["Sıtkı Bağdat", "Umurcan Görür"], ["Ali Kara", "Veli Ak", "Ayten Pak", "Nuran Çak"], "Akademik Bilişim", "31 Ocak - 03 Şubat 2015"]
 
 ruby101.fetch(:egitmen)   # => ["Sıtkı Bağdat", "Umurcan Görür"]
 ruby101.fetch(:falan)     # => KeyError: key not found

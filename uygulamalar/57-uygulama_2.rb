@@ -1,13 +1,13 @@
-require "unicode_utils"
+require 'turkish_support'
+using TurkishSupport
 
-#Palindrom kelime methodu
-def palindrom? kelime
-	kelime = UnicodeUtils.upcase(kelime, :tr)
-	kelime == kelime.reverse
+def palindrom?(string)
+  string.upcase!.gsub!(/\W/, '')
+  string == string.reverse
 end
 
-#Palindrom cümle methodu
-def cumle_palindrom? cumle
-	cumle.gsub!(/\W/, "")
-	palindrom? cumle
-end
+palindrom? "kazak"    # => true
+palindrom? "kalpak"   # => false
+
+palindrom? "Traş niçin şart"             # => true
+palindrom? "Ey Edip Adana da pide ye."   # => true

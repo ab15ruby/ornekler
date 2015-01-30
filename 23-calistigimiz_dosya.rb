@@ -1,1 +1,1 @@
-load "23 - harici_dosya.rb"
+load "23-harici_dosya.rb"
