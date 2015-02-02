@@ -21,7 +21,7 @@ loop do
     when 1
       i = 0
       defter.kisiler.each do |kisi|
-        puts "#{i.next} -> #{kisi.ad} #{kisi.soyad} (#{kisi.yas} - #{kisi.sehir}) - #{kisi.tel} <#{kisi.eposta}>"
+        puts "#{i = i.next} -> #{kisi.ad} #{kisi.soyad} (#{kisi.yas} - #{kisi.sehir}) - #{kisi.tel} <#{kisi.eposta}>"
       end
     when 2
       veriler = []
