@@ -17,3 +17,6 @@ module TerminalRenkleri
   COLOR_GRAY='\e[0;30m'
   COLOR_LIGHT_GRAY='\e[0;37m'
 end
+
+# Kullanım Örneği
+# puts "#{TerminalRenkleri::COLOR_YELLOW}Mer#{TerminalRenkleri::COLOR_RED}ha#{TerminalRenkleri::COLOR_GREEN}ba#{TerminalRenkleri::COLOR_NC}"
